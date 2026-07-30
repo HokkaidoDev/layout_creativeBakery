@@ -1,0 +1,9 @@
+@use '../abstract' as *;
+
+.icon {
+  @include square(24px);
+
+  &--menu {
+    background: url('../images/icons/icon-burger-menu.svg') center/contain no-repeat;
+  }
+}

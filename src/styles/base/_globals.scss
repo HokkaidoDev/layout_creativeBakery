@@ -1,0 +1,23 @@
+@use '../abstract' as *;
+
+body {
+  @include font-body;
+  color: var(--color-black);
+  background-color: var(--color-light-blue);
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  @include reset-link;
+}
+
+button {
+  @include reset-button;
+}

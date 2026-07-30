@@ -1,7 +1,7 @@
-@import 'utils';
-@import 'fonts';
-@import 'typography';
+@use './base/normalize';
+@use './base/globals';
+@use './base/utils';
 
-body {
-  background: $c-gray;
-}
+@use './blocks/icon';
+@use './blocks/button';
+@use './blocks/header';

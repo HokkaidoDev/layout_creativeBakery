@@ -1,0 +1,28 @@
+@use '../abstract/media' as *;
+
+:root {
+  --color-dark-orange: #B2341A;
+  --color-accent-orange: #F9512E;
+  --color-light-orange: #FBA28F;
+  --color-light-pink: #FFEEFC;
+  --color-light-blue: #EEF7FF;
+  --color-black: #1C1A26;
+  --color-grey: #7F8096;
+  --color-white: #FFFFFF;
+
+  --container-max-width: 100%;
+  --container-padding-x: 16px;
+
+  @include tablet {
+    --container-padding-x: 44px;
+  }
+
+  @include desktop-xl {
+    --container-max-width: 1200px;
+    --container-padding-x: 24px;
+  }
+
+  --font-family-base: Inter, sans-serif;
+
+  --transition-duration: 0.3s;
+}

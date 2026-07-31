@@ -7,8 +7,8 @@
   padding: var(--headerPaddingY) var(--headerPaddingX);
 
   @include desktop {
-    --headerPaddingX: 32px;
     --headerPaddingY: 28px;
+    --headerPaddingX: 32px;
 
     padding: var(--headerPaddingY) var(--headerPaddingX) 0;
   }
@@ -22,36 +22,5 @@
 
   &__menu {
     margin-left: auto;
-
-    &-list {
-      display: flex;
-      align-items: center;
-      column-gap: 64px;
-    }
-
-    &-link {
-      position: relative;
-      display: inline-flex;
-      align-items: center;
-      height: 60px;
-
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: 8px;
-        width: 100%;
-        height: 2px;
-        background-color: currentColor;
-
-        scale: 0;
-        transition-duration: inherit;
-      }
-
-      @include hover {
-        &::after {
-          scale: 1;
-        }
-      }
-    }
   }
 }

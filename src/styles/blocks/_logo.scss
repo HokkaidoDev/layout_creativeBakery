@@ -1,0 +1,9 @@
+@use '../abstract' as *;
+
+.logo {
+  transition-duration: var(--transition-duration);
+
+  @include hover {
+    scale: 1.1;
+  }
+}

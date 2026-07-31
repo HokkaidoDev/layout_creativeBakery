@@ -2,8 +2,13 @@
 
 body {
   @include font-body;
+  
   color: var(--color-black);
   background-color: var(--color-light-blue);
+
+  &:has(.menu:target) {
+    overflow: hidden;
+  }
 }
 
 a,

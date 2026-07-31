@@ -31,52 +31,121 @@
           <img
             class="logo__image"
             src="./src/images/logo-bakerlab.svg"
-            alt="Bakerlab"
+            alt="Bakerlab logo"
             width="136"
             height="32"
           />
         </a>
-        <nav class="header__menu hidden-tablet-mobile">
-          <ul class="header__menu-list">
-            <li class="header__menu-item">
+        <nav class="nav header__menu hidden-tablet-mobile">
+          <ul class="nav__list">
+            <li class="nav__item">
               <a
                 href="#"
-                class="header__menu-link"
+                class="nav__link"
               >
                 Products
               </a>
             </li>
-            <li class="header__menu-item">
+            <li class="nav__item">
               <a
                 href="#"
-                class="header__menu-link"
+                class="nav__link"
               >
                 About Us
               </a>
             </li>
-            <li class="header__menu-item">
+            <li class="nav__item">
               <a
                 href="#"
-                class="header__menu-link"
+                class="nav__link"
               >
                 Blog
               </a>
             </li>
+            <li class="nav__item">
+              <a
+                href="#"
+                class="nav__link button button--contact-us"
+              >
+                Contact us
+              </a>
+            </li>
           </ul>
         </nav>
-        <button
-          class="header__button button button--contact-us hidden-tablet-mobile"
-          type="button"
-        >
-          <span>Contact us</span>
-        </button>
-        <button
+        <a
+          href="#menu"
           class="header__burger-button icon icon--menu visible-tablet-mobile"
-          type="button"
+          role="button"
+          aria-controls="menu"
           aria-label="Open menu"
-        >
-        </button>
+        ></a>
       </div>
     </header>
+
+    <aside
+      class="menu"
+      id="menu"
+    >
+      <div class="menu__inner">
+        <div class="menu__top">
+          <a
+            href="#"
+            class="menu__logo logo"
+          >
+            <img
+              class="logo__image"
+              src="./src/images/logo-bakerlab.svg"
+              alt="Bakerlab logo"
+              width="136"
+              height="32"
+            />
+          </a>
+          <a
+            href="#"
+            class="menu__close-button icon icon--close visible-tablet-mobile"
+            aria-label="Close menu"
+          ></a>
+        </div>
+
+        <div class="menu__bottom">
+          <nav class="nav nav--vertical visible-tablet-mobile">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a
+                  href="#"
+                  class="nav__link"
+                >
+                  Products
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="#"
+                  class="nav__link"
+                >
+                  About Us
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="#"
+                  class="nav__link"
+                >
+                  Blog
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="#"
+                  class="nav__link button button--contact-us"
+                >
+                  Contact us
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </aside>
   </body>
 </html>

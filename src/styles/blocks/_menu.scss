@@ -7,18 +7,17 @@
   left: 0;
 
   height: 100vh;
-  background-color: var(--color-light-blue);
-  opacity: 0;
-  transform: scale(0);
-
-  transition-duration: var(--transition-duration);
   pointer-events: none;
+  background-color: var(--color-light-blue);
+  transform: scale(0);
+  opacity: 0;
+  transition-duration: var(--transition-duration);
 
   &:target {
     opacity: 1;
-    translate: 0;
     transform: scale(1);
     pointer-events: all;
+    z-index: 1;
   }
 
   &__top {
@@ -26,6 +25,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 16px;
-    margin-bottom: 132px;
+
+    &:not(:last-child) {
+      margin-bottom: 132px;
+    }
   }
 }

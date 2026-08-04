@@ -22,12 +22,18 @@
 
 .button {
   @include font-uppercase;
+  @include flex-center(true);
 
-  display: flex;
-  align-items: center;
   column-gap: 1px;
   color: var(--color-accent-orange);
-  transition-duration: var(--transition-duration);
+
+  @include hover {
+    text-shadow: var(--shadow);
+  }
+
+  &:disabled {
+    color: var(--color-light-orange);
+  }
 
   &--contact-us {
     &::before {
@@ -38,11 +44,25 @@
     }
 
     @include hover {
-      text-shadow: 0 0 8px;
-
       &::before {
         animation: phone-wiggle var(--transition-duration) ease-in-out infinite alternate;
       }
+    }
+  }
+
+  &--learn-more {
+    padding-block: 20px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+
+    @include hover {
+      color: var(--color-white);
+      background-color: var(--color-accent-orange);
+    }
+
+    &:focus {
+      color: var(--color-white);
+      background-color: var(--color-dark-orange);
     }
   }
 }

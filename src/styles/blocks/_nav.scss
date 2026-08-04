@@ -3,8 +3,8 @@
 .nav {
   &__list {
     display: flex;
-    align-items: center;
     column-gap: 64px;
+    align-items: center;
   }
 
   &__link {
@@ -15,13 +15,17 @@
 
     &:not(.button)::after {
       content: '';
+
       position: absolute;
       bottom: 8px;
-      width: 100%;
-      height: 2px;
-      background-color: currentColor;
 
       scale: 0;
+
+      width: 100%;
+      height: 2px;
+
+      background-color: currentColor;
+
       transition-duration: inherit;
     }
 
@@ -35,7 +39,7 @@
   &--vertical {
     .nav__list {
       @include flex-center;
-      
+
       flex-direction: column;
       row-gap: 24px;
       column-gap: 0;

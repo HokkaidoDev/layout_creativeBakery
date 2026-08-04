@@ -10,6 +10,14 @@
   --color-grey: #7F8096;
   --color-white: #FFFFFF;
 
+  --border: 1px solid var(--color-accent-orange);
+  --border-radius: 32px;
+  --border-radius-small: 8px;
+
+  --shadow: 0 0 8px var(--color-accent-orange);
+
+  --font-family-base: Inter, sans-serif;
+
   --container-max-width: 100%;
   --container-padding-x: 16px;
 
@@ -18,11 +26,9 @@
   }
 
   @include desktop-xl {
-    --container-max-width: 1200px;
-    --container-padding-x: 24px;
+    --container-max-width: 1250px;
+    --container-padding-x: 34px;
   }
-
-  --font-family-base: Inter, sans-serif;
 
   --transition-duration: 0.3s;
 }

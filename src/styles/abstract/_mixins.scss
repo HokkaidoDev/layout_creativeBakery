@@ -16,6 +16,12 @@
   background-color: transparent;
 }
 
+@mixin focus-button {
+  box-shadow: var(--shadow);
+  padding-right: 4px;
+  outline: none;
+}
+
 @mixin flex-center($isInline: false) {
   @if $isInline {
     display: inline-flex;

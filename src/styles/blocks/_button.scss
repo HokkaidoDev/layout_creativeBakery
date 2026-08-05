@@ -24,18 +24,12 @@
   @include font-uppercase;
   @include flex-center(true);
 
-  column-gap: 1px;
+  padding-block: 8px;
   color: var(--color-accent-orange);
 
-  @include hover {
-    text-shadow: var(--shadow);
-  }
-
-  &:disabled {
-    color: var(--color-light-orange);
-  }
-
   &--contact-us {
+    column-gap: 1px;
+
     &::before {
       @include square(24px);
 
@@ -44,9 +38,15 @@
     }
 
     @include hover {
+      text-shadow: var(--shadow);
+
       &::before {
         animation: phone-wiggle var(--transition-duration) ease-in-out infinite alternate;
       }
+    }
+
+    &:focus {
+      @include focus-button;
     }
   }
 
@@ -63,6 +63,23 @@
     &:focus {
       color: var(--color-white);
       background-color: var(--color-dark-orange);
+    }
+  }
+
+  &--order {
+    column-gap: 4px;
+
+    @include hover {
+      color: var(--color-light-orange);
+
+      svg {
+        fill: var(--color-light-orange);
+        animation: arrow-move var(--transition-duration) ease-in-out infinite alternate;
+      }
+    }
+
+    &:focus {
+      @include focus-button;
     }
   }
 }

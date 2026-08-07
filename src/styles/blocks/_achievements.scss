@@ -9,6 +9,10 @@
     @include tablet {
       row-gap: 80px;
     }
+
+    @include desktop {
+      padding-bottom: 294px;
+    }
   }
 
   &__item {

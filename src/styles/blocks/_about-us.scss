@@ -4,12 +4,22 @@
   &__inner {
     margin-bottom: 72px;
 
+    background-image: url('../images/crumbs.webp');
+    background-position: 0 75%;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
     @include tablet {
       margin-bottom: 152px;
+      background-position: center;
+      background-size: 77%;
     }
 
     @include desktop {
       margin-bottom: 56px;
+      background-position: 70%;
+      background-size: contain;
     }
   }
 
@@ -39,7 +49,7 @@
 
     @include desktop {
       grid-column: 1 / span 3;
-      
+
       // added clamp for font-size from 56px to 72px. Better solution for adaptive design!
       font-size: clamp(3.5rem, -2.32rem + 9.09vw, 4.5rem);
     }

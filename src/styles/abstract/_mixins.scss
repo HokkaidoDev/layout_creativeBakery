@@ -140,3 +140,33 @@
     column-gap: 24px;
   }
 }
+
+@mixin footer-hover-effect {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    scale: 0;
+    height: 1px;
+    bottom: -5px;
+    left: 0;
+    background-color: currentColor;
+    transition-duration: inherit;
+  }
+
+  @include hover {
+    color: var(--color-accent-orange);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6),
+        0 0 20px rgba(255, 255, 255, 0.3);
+
+    &::after {
+      scale: 1;
+    }
+  }
+
+  &:focus-visible {
+    color: var(--color-light-orange);
+  }
+}

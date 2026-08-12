@@ -21,6 +21,9 @@
   --container-max-width: 100%;
   --container-padding-x: 16px;
 
+  --footer-small-title-MB: 16px;
+  --footer-block-MT: 40px;
+
   @include tablet {
     --container-padding-x: 44px;
   }

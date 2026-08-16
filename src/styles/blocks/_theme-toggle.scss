@@ -5,10 +5,6 @@
   width: 64px;
   height: 24px;
 
-  &__input {
-    display: none;
-  }
-
   &__label {
     position: absolute;
     top: 50%;
@@ -64,5 +60,10 @@
     height: 20px;
     border-color: var(--color-accent-orange);
     border: 2px solid var(--color-accent-orange);
+  }
+
+  &__input:focus-visible + &__label {
+    outline: 2px solid var(--color-black);
+    outline-offset: 4px;
   }
 }

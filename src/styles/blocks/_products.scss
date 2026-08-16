@@ -22,6 +22,8 @@
 
     grid-column: 1 / span 2;
     margin-bottom: 24px;
+    color: var(--title-color);
+    transition-duration: var(--transition-duration);
 
     @include tablet {
       grid-column: 1 / span 5;

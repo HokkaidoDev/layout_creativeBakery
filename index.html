@@ -21,7 +21,7 @@
       src="./src/scripts/main.js"
     ></script>
   </head>
-  <body>
+  <body class="page">
     <header
       class="header"
       id="header"
@@ -75,13 +75,27 @@
             </li>
           </ul>
         </nav>
-        <a
-          href="#menu"
-          class="header__burger-button icon icon--menu visible-tablet-mobile"
-          role="button"
-          aria-controls="menu"
-          aria-label="Open menu"
-        ></a>
+        <div class="header__wrapper">
+          <div class="theme-toggle">
+            <input
+              class="theme-toggle__input"
+              id="toggle-checkbox-header"
+              type="checkbox"
+            />
+            <label
+              class="theme-toggle__label"
+              for="toggle-checkbox-header"
+              aria-label="Toggle theme"
+            ></label>
+          </div>
+          <a
+            href="#menu"
+            class="header__burger-button icon icon--menu visible-tablet-mobile"
+            role="button"
+            aria-controls="menu"
+            aria-label="Open menu"
+          ></a>
+        </div>
       </div>
     </header>
 
@@ -103,13 +117,27 @@
               height="32"
             />
           </a>
-          <a
-            href="#header"
-            class="menu__close-button icon icon--close visible-tablet-mobile"
-            role="button"
-            aria-controls="menu"
-            aria-label="Close menu"
-          ></a>
+          <div class="menu__wrapper">
+            <div class="theme-toggle">
+              <input
+                class="theme-toggle__input"
+                id="toggle-checkbox-menu"
+                type="checkbox"
+              />
+              <label
+                class="theme-toggle__label"
+                for="toggle-checkbox-menu"
+                aria-label="Toggle theme"
+              ></label>
+            </div>
+            <a
+              href="#header"
+              class="menu__close-button icon icon--close visible-tablet-mobile"
+              role="button"
+              aria-controls="menu"
+              aria-label="Close menu"
+            ></a>
+          </div>
         </div>
 
         <div class="menu__bottom">
@@ -591,9 +619,30 @@
               <div class="contacts__call-us">
                 <h3 class="contacts__call-us-title h4">Call us</h3>
                 <div class="contacts__call-us-body">
-                  <p><a class="contacts__link" href="tel:6295550129">(629) 555-0129</a></p>
-                  <p><a class="contacts__link" href="tel:6035550123">(603) 555-0123</a></p>
-                  <p><a class="contacts__link" href="tel:7045550127">(704) 555-0127</a></p>
+                  <p>
+                    <a
+                      class="contacts__link"
+                      href="tel:6295550129"
+                    >
+                      (629) 555-0129
+                    </a>
+                  </p>
+                  <p>
+                    <a
+                      class="contacts__link"
+                      href="tel:6035550123"
+                    >
+                      (603) 555-0123
+                    </a>
+                  </p>
+                  <p>
+                    <a
+                      class="contacts__link"
+                      href="tel:7045550127"
+                    >
+                      (704) 555-0127
+                    </a>
+                  </p>
                 </div>
               </div>
               <div class="contacts__email-us">

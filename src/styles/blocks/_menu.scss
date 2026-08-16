@@ -8,7 +8,7 @@
 
   height: 100vh;
   pointer-events: none;
-  background-color: var(--color-light-blue);
+  background-color: var(--page-bg);
   transform: scale(0);
   opacity: 0;
   transition-duration: var(--transition-duration);
@@ -29,5 +29,10 @@
     &:not(:last-child) {
       margin-bottom: 132px;
     }
+  }
+
+  &__wrapper {
+    display: flex;
+    column-gap: 24px;
   }
 }

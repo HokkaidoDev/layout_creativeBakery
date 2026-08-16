@@ -20,6 +20,11 @@
     column-gap: 64px;
   }
 
+  &__wrapper {
+    display: flex;
+    column-gap: 24px;
+  }
+
   &__menu {
     margin-left: auto;
   }

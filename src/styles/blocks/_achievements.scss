@@ -32,5 +32,8 @@
 
   &__value {
     @include font-big;
+
+    color: var(--big-font-color);
+    transition-duration: var(--transition-duration);
   }
 }

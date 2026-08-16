@@ -1,14 +1,21 @@
 @use '../abstract' as *;
 
-body {
+.page {
   @include font-body;
 
   color: var(--color-black);
-  background-color: var(--color-light-blue);
+  background-color: var(--page-bg);
+  transition: background-color var(--transition-duration) ease;
 
   &:has(.menu:target) {
     overflow: hidden;
   }
+}
+
+.page--theme--pink {
+  --page-bg: var(--color-light-pink);
+  --title-color: var(--color-accent-orange);
+  --big-font-color: var(--color-accent-orange);
 }
 
 a,

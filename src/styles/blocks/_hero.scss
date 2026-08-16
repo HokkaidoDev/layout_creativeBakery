@@ -27,6 +27,8 @@
 
     grid-column: 1 / -1;
     grid-row: 2;
+    color: var(--title-color);
+    transition-duration: var(--transition-duration);
 
     @include tablet {
       grid-column: 1 / -1;
@@ -61,7 +63,7 @@
     grid-column: span 2;
     grid-row: 3;
     place-self: center;
-    
+
     width: 100%;
     max-width: 288px;
 
